@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": " /node_modules/-bin/tsc && cp package. json -/build/package.json",
+    "build": "babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
@@ -20,6 +20,11 @@
     "node": "^20.14.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "eslint": "^9.4.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.3"
   }
 }
