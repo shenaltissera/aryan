@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    
+    "build": " /node_modules/-bin/tsc && cp package. json -/build/package.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
